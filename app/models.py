@@ -1,7 +1,14 @@
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel
 
+
+class TokenRequest(BaseModel):
+    chain: str
+    address: str
+
+class TokensBatchRequest(BaseModel):
+    tokens: List[TokenRequest]
 
 class PoolInfo(BaseModel):
     pairId: str
