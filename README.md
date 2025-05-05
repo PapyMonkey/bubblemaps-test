@@ -44,7 +44,7 @@ This service provides aggregated liquidity information for SPL tokens (solana) v
 
 4. Run the app locally:
    ```bash
-   uvicorn app.main:app --reload
+   uvicorn app.main:bubblemaps --reload
    ```
 
 ---
